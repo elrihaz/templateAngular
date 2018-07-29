@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+<ul class="nav">
+    <li class="nav-item" routerLinkActive="active"
+        [routerLink]="[{ outlets: { primary: ['accueil'], banniere: ['accueil'] } }]">
+        Accueil
+    </li>
+    <li class="nav-item" routerLinkActive="active" *ngIf="isAuth"
+        [routerLink]="[{ outlets: { primary: ['link1'], banniere: ['link1'] } }]">
+        Link1
+    </li>
+    <li class="nav-item" routerLinkActive="active" *ngIf="isAuth"
+        [routerLink]="[{ outlets: { primary: ['link2'], banniere: ['link2'] } }]">
+        Link2
+    </li>
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+    <li class="nav-item" routerLinkActive="active" *ngIf="!isAuth"
+    [routerLink]="[{ outlets: { primary: ['signin'], banniere: ['accueil'] } }]">
+    Connexion
+    </li>
+    <li (click)="onSignOut()" style="cursor:pointer" *ngIf="isAuth">
+        Déconnexion
+    </li>
+</ul>
+</div>
+</nav>

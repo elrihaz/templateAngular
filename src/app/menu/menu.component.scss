@@ -1,0 +1,29 @@
+/******************* NAVIGATION ******************************/
+
+ul {
+    text-transform: uppercase;
+    font-size: 1em;
+    list-style-type: none;
+    color: white;
+  }
+  
+  ul li {
+    height: 62px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);    
+    display: flex; /* allows align-items to work below */
+    justify-content: center; /* Horizontally centers single-line elements */
+    text-align:center; /* Horizontally centers text within line-wrapped elements */
+    align-items: center; /* vertical */    
+  }
+  
+  ul li.active,
+  ul li:hover,
+  ul li.active:hover {
+    background-color: aquamarine;
+    border-bottom: 3px black solid;
+    color:black;
+    transition: 1000ms;
+  }

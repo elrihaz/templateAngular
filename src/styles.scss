@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+  html, body {
+    box-sizing: border-box;
+    background-color: white;
+    height: 100%;
+    margin: 0;
+  }
+
+  .banniere {
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+  

@@ -1,0 +1,36 @@
+.appContainer {        
+    display: grid;
+    grid-gap: 0px;
+    height: 100%;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 600px 0px auto 60px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h h h h h h h h h"
+        "m m m m m m m m m m m m m m m m m m m m"
+        ". . . . c c c c c c c c c c c c . . . ."
+        "f f f f f f f f f f f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+    background-color: firebrick;
+}
+
+.menu {
+    grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -62px 0px 0px 0px;
+}
+
+.content {
+    grid-area: c;
+    background-color: #9eb7e7 ;  
+    height: 100%;  
+}
+
+.footer {
+    grid-area: f;
+    background-color: rgb(217, 255, 127);
+}
