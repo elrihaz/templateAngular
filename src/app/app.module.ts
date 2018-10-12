@@ -11,6 +11,7 @@ import { AuthGuardService } from './services/auth-guard.service';
 import { AppComponent } from './app.component';
 
 import { MenuComponent } from './menu/menu.component';
+import { HeaderComponent } from './header/header.component';
 
 import { AccueilComponent } from './accueil/accueil.component';
 import { AccueilBanniereComponent } from './accueil/accueil-banniere/accueil-banniere.component';
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     SigninComponent,
+    HeaderComponent,
     MenuComponent,
     AccueilComponent,
     AccueilBanniereComponent,
