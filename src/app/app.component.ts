@@ -13,12 +13,12 @@ export class AppComponent {
   constructor() {
     // Initialize Firebase
     const config = {
-      apiKey: 'AIzaSyBUm5Iv2_hvNTOcI1HRxb5edj8_eJBWim0',
-      authDomain: 'templatemat.firebaseapp.com',
-      databaseURL: 'https://templatemat.firebaseio.com',
-      projectId: 'templatemat',
-      storageBucket: 'templatemat.appspot.com',
-      messagingSenderId: '1031797971169'
+    apiKey: 'AIzaSyBq78XxSul5gRD9_UJdnRY5-ByObtPB9nc',
+    authDomain: 'templateangular-6f2ae.firebaseapp.com',
+    databaseURL: 'https://templateangular-6f2ae.firebaseio.com',
+    projectId: 'templateangular-6f2ae',
+    storageBucket: 'templateangular-6f2ae.appspot.com',
+    messagingSenderId: '303148202996'
     };
     firebase.initializeApp(config);
   }
